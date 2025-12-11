@@ -10,8 +10,7 @@ This project implements a **Linear Regression model** to predict SMS message cou
 ```
 .
 ├── Simeon Boison.ipynb          # Main Jupyter Notebook with complete analysis
-├── data.csv                     # Dataset for training and testing
-├── numbers_and_squares.csv      # Supporting data file
+├── data.zip                     # Compressed dataset for training and testing 
 ├── Model Analysis.txt           # Model analysis results and insights
 ├── README.md                    # This file
 └── .gitignore                   # Git ignore file
@@ -130,6 +129,7 @@ pip install pandas numpy scikit-learn matplotlib seaborn
 
 ## License
 MIT License
+
 
 
 
