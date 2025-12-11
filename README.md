@@ -129,10 +129,9 @@ pip install pandas numpy scikit-learn matplotlib seaborn
 - Implement ensemble methods for better predictions
 
 ## License
-This project is provided as-is for educational purposes.
+MIT License
 
-## Contact
-For questions or suggestions regarding this project, please reach out to the author.
 
----
-**Last Updated**: December 2025
+
+
+
