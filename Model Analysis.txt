@@ -1,0 +1,70 @@
+SMS Count Prediction Model Analysis
+=====================================
+
+1. Data Preparation and Exploration
+----------------------------------
+- Loaded SMS traffic dataset from 'data.csv'
+- Performed initial data exploration using pandas
+- Generated correlation matrix to understand feature relationships
+- Visualized correlations using a heatmap
+- Key features included various metrics related to SMS traffic
+- Target variable: total_sms count
+
+2. Feature Selection
+-------------------
+- Removed 'datetime' column as it wasn't directly useful for prediction
+- Selected all remaining numeric columns as features
+- Split features (X) and target variable (Y)
+- Features represent various SMS traffic metrics
+- Target variable represents the total SMS count we want to predict
+
+3. Data Splitting
+----------------
+- Split data into training (67%) and testing (33%) sets
+- Used random_state=42 for reproducibility
+- Training set: Used to teach the model patterns in the data
+- Testing set: Used to evaluate model performance on unseen data
+
+4. Model Training
+----------------
+- Used Linear Regression model
+- Trained on the training dataset
+- Model learned relationships between features and target variable
+- Simple but interpretable model choice
+
+5. Model Evaluation
+------------------
+Training Set Performance:
+- R² Score: Shows how well the model fits the training data
+- Mean Absolute Error: Average magnitude of prediction errors
+
+Testing Set Performance:
+- R² Score: Indicates model's ability to generalize
+- Mean Absolute Error: Shows prediction accuracy on new data
+
+6. Visualization
+---------------
+- Created scatter plots of actual vs predicted values
+- Added reference line for perfect predictions
+- Helps visualize where model performs well or poorly
+- Shows any systematic bias in predictions
+
+Conclusion
+----------
+Strengths:
+- Model shows reasonable predictive capability
+- Linear approach provides interpretable results
+- Implementation is computationally efficient
+
+Limitations:
+- Assumes linear relationships between features
+- May miss complex patterns in the data
+- Performance might be improved with more advanced models
+
+Recommendations:
+1. Consider trying non-linear models (Random Forest, XGBoost)
+2. Feature engineering might improve performance
+3. Collect more data if possible
+
+
+By Simeon Boison
